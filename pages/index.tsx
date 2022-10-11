@@ -1,19 +1,22 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Footer from "../components/elements/footer";
+import Header from "../components/elements/header";
 import Hero from "../components/elements/hero";
-import styles from "../styles/Home.module.css";
+import Preview from "../components/elements/preview";
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>サブスクを管理する | Subsuke</title>
+        <title>Subsuke - サブスクを管理する | Subsuke</title>
         <meta name="description" content="サブスクを管理する | Subsuke" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <Header />
+      <main>
         <Hero />
+        <Preview />
       </main>
       <Footer />
     </div>
