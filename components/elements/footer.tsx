@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer px-20 py-10 bg-base-200 text-base-content absolute bottom-0">
+    <footer className="footer px-20 pt-10">
       <div>
-        <Image src={"/img/icon_white.png"} width={50} height={50}></Image>
+        <Image src={"/img/wht_icon.png"} width={50} height={50}></Image>
         <p>
           Subsuke
           <br />
