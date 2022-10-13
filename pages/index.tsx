@@ -3,7 +3,7 @@ import Head from "next/head";
 import Footer from "../components/elements/footer";
 import Header from "../components/elements/header";
 import Hero from "../components/elements/hero";
-import Preview from "../components/elements/preview";
+import MainListPreview from "../components/elements/MainListPreview";
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <Header />
       <main>
         <Hero />
-        <Preview />
+        <MainListPreview />
       </main>
       <Footer />
     </div>
