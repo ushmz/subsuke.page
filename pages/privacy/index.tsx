@@ -4,7 +4,7 @@ import React from "react";
 import Footer from "../../components/elements/footer";
 import { getPrivacyPolicy } from "../../libs/api";
 import markdownToHtml from "../../libs/markdownToHtml";
-import "../../styles/markdown.module.css";
+import style from "../../styles/markdown.module.css";
 
 type Props = {
   [key: string]: string;
@@ -20,7 +20,10 @@ const PrivacyPolicy: NextPage<Props> = ({ content }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="max-w-screen-lg mx-auto my-32">
-        <div dangerouslySetInnerHTML={{ __html: content }}></div>
+        <div
+          className={`${style["markdown"]}`}
+          dangerouslySetInnerHTML={{ __html: content }}
+        ></div>
       </main>
       <Footer />
     </div>
