@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
-import Footer from "../../components/elements/footer";
+import Footer from "../../components/elements/Footer";
 import { getPrivacyPolicy } from "../../libs/api";
 import markdownToHtml from "../../libs/markdownToHtml";
 import style from "../../styles/markdown.module.css";
